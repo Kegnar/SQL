@@ -61,3 +61,5 @@ BEGIN
 END
 
 PRINT(@time);
+
+SELECT * FROM Schedule
