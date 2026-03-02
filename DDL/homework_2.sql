@@ -10,7 +10,6 @@ CREATE OR ALTER PROCEDURE sp_InsertLesson
 	,@time AS TIME
 	,@in_lesson_counter AS INT 			--захватываем счетчик уроков снаружи
 	,@out_lesson_counter AS INT OUTPUT 	--возвращаем счетчик
-
 AS
 BEGIN
 	PRINT(FORMATMESSAGE(N'%i   %s   %s   %s',@in_lesson_counter, CAST(@date AS VARCHAR(24)), DATENAME(WEEKDAY,@date), CAST(@time AS VARCHAR(24))));
